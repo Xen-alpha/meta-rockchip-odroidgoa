@@ -6,9 +6,9 @@ require linux-rockchip.inc
 
 inherit local-git
 
-SRCREV = "9789c7416f009b1c7a064241a5f185b368b24732"
+SRCREV = "a82a1a93e7def23c8c30db102aacffaf2f6b674c"
 SRC_URI = " \
-	git://github.com/JeffyCN/mirrors.git;protocol=https;nobranch=1;branch=kernel-4.19-2022_11_23; \
+	git://github.com/khadas/linux.git;protocol=https;nobranch=1;branch=khadas-edge-Qt; \
 	file://${THISDIR}/files/cgroups.cfg \
 "
 

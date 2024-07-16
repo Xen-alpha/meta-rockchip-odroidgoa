@@ -6,9 +6,9 @@ require linux-rockchip.inc
 
 inherit local-git
 
-SRCREV = "e7a4fc70448ca2f66b3df50cabe527916b42bdad"
+SRCREV = "faeb665a41b53ebb386e69fe737ccf0707aaf07b"
 SRC_URI = " \
-	git://github.com/JeffyCN/mirrors.git;protocol=https;nobranch=1;branch=kernel-4.4-2022_11_23; \
+	git://github.com/hardkernel/linux.git;protocol=https;nobranch=1;branch=odroidgoA-4.4.y; \
 	file://${THISDIR}/files/cgroups.cfg \
 "
 

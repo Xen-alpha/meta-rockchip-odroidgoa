@@ -1,0 +1,18 @@
+This remove duplicated target helloworld.so
+
+---
+ Makefile | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/scripts/Makefile.lib b/scripts/Makefile.lib
+--- ./scripts/Makefile.lib
++++ ./scripts/Makefile.lib
+@@ -392,8 +392,6 @@
+ 
+ EFI_LDS_PATH = $(srctree)/arch/$(ARCH)/lib/$(EFI_LDS)
+ 
+-$(obj)/helloworld.so: $(EFI_LDS_PATH)
+-
+ $(obj)/helloworld.so: $(obj)/helloworld.o arch/$(ARCH)/lib/$(EFI_CRT0) \
+ 		arch/$(ARCH)/lib/$(EFI_RELOC)
+ 	$(call cmd,efi_ld)
